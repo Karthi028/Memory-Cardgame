@@ -55,8 +55,7 @@
       secondCard = event.target;
       text2 = event.target.textContent;
     }
-console.log(text1,text2,count);
-console.log(firstCard,secondCard);
+
     if(count==2)
     {
       if(firstCard == secondCard)
@@ -69,7 +68,7 @@ console.log(firstCard,secondCard);
       secondCard.disabled = true; 
       resetValues();
       match+=1;
-      console.log(match);
+     
       //  If All cards are Matched
        if(match==8){
          let grid = document.querySelector('.grid');
@@ -87,15 +86,14 @@ console.log(firstCard,secondCard);
         secondCard.classList.replace('unhide','hide');
         
       }, 700);
+      //  to reset All the values Stored for reference purpose (Matching cards)
+
       setTimeout(() => {
-      resetValues()
-     }, 700);
+       resetValues()
+      }, 700);
 
      }
-     //  to reset All the values Stored for reference purpose (Matching cards)
-    
-     
-        
+          
     }
   
   }
