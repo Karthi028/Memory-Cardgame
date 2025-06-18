@@ -42,8 +42,8 @@ h1{
     color: white;
     padding:0.3rem 0.5rem;
     
-    
 }
+
 .btt:hover{
     width:8rem;
     height:2rem;
@@ -154,7 +154,7 @@ body{
 }
 @media  (max-width:725px) {
     #won{
-        font-size:7rem;
+        font-size:6rem;
     }
     
 }
