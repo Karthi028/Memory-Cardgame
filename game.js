@@ -61,6 +61,7 @@
       if(firstCard == secondCard)
       {
         firstCard.classList.replace('unhide','hide');
+        resetValues()
       }
       // If Cards Match
       else if(text1 == text2){
