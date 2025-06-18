@@ -14,7 +14,7 @@
 
   }
 
-  //Build the UI table with buttons inside grid
+  //Build the UI table using buttons inside grid
 
   for(i=0;i<16;i++){
     let cards = document.createElement('button');
@@ -62,44 +62,40 @@
       {
         firstCard.classList.replace('unhide','hide');
       }
+      // If Cards Match
       else if(text1 == text2){
-      //Maintain a counter
-      //If that exceeds 16 throw success message
       firstCard.disabled = true;
       secondCard.disabled = true; 
       match+=1;
-
+      //  If All cards are Matched
        if(match==8){
-        // alert("You won the Game")
-        let grid = document.querySelector('.grid');
-        grid.classList.add('blur');
-        let won = document.getElementById('won');
-        won.style.display = "block";
+         let grid = document.querySelector('.grid');
+         grid.classList.add('blur');
+         let won = document.getElementById('won');
+         won.style.display = "block";
         
-        
-        
-        
-       }
+        }
       
       }
+      // If cards not Matching
      else if(text1 !== text2){
       setTimeout(() => {
-       firstCard.classList.replace('unhide','hide');
+        firstCard.classList.replace('unhide','hide');
         secondCard.classList.replace('unhide','hide');
         
-      }, 500);
+      }, 700);
 
      }
-
+    //  to reset All the values Stored for reference purpose (Matching cards)
+    
     setTimeout(() => {
       resetValues();
-    }, 500);
+    }, 700);
 
     }
   
   }
 
-  // resets the values stored for reference
   function resetValues()
   {
       count = '';
@@ -113,6 +109,8 @@
 
    
 })();
+
+// restart button to refresh the page 
 
 function restart(){
   location. reload();
