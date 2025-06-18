@@ -66,7 +66,9 @@
       else if(text1 == text2){
       firstCard.disabled = true;
       secondCard.disabled = true; 
+      resetValues();
       match+=1;
+      console.log(match);
       //  If All cards are Matched
        if(match==8){
          let grid = document.querySelector('.grid');
@@ -86,12 +88,12 @@
       }, 700);
 
      }
-    //  to reset All the values Stored for reference purpose (Matching cards)
+     //  to reset All the values Stored for reference purpose (Matching cards)
     
-    setTimeout(() => {
-      resetValues();
-    }, 750);
-
+     setTimeout(() => {
+      resetValues()
+     }, 701);
+        
     }
   
   }
@@ -106,8 +108,6 @@
 
   }
 
-
-   
 })();
 
 // restart button to refresh the page 
