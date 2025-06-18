@@ -55,7 +55,8 @@
       secondCard = event.target;
       text2 = event.target.textContent;
     }
-
+console.log(text1,text2,count);
+console.log(firstCard,secondCard);
     if(count==2)
     {
       if(firstCard == secondCard)
@@ -86,13 +87,14 @@
         secondCard.classList.replace('unhide','hide');
         
       }, 700);
+      setTimeout(() => {
+      resetValues()
+     }, 700);
 
      }
      //  to reset All the values Stored for reference purpose (Matching cards)
     
-     setTimeout(() => {
-      resetValues()
-     }, 701);
+     
         
     }
   
