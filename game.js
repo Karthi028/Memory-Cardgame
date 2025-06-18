@@ -90,7 +90,7 @@
     
     setTimeout(() => {
       resetValues();
-    }, 700);
+    }, 750);
 
     }
   
